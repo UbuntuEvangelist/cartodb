@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '3.2.22'
+gem 'rails', '4.0.0'
 
 gem 'rake',                    '0.9.2.2'
 gem 'pg',                      '0.15.0'
@@ -21,7 +21,7 @@ gem 'redis',                   '3.2.1'
 gem 'hiredis',                 '0.6.0'
 gem 'nokogiri',                '~> 1.6.6.2'
 gem 'statsd-client',           '0.0.7', require: 'statsd'
-gem 'aws-sdk',                 '1.8.5'
+gem 'aws-sdk', '1.52.0'
 gem 'ruby-prof',               '0.15.1'
 gem 'request_store',           '1.1.0'
 
@@ -53,9 +53,9 @@ gem 'dbf',                     '2.0.6'
 gem 'faraday',                 '0.9.0'
 gem 'retriable',               '1.4.1'  # google-api-client needs this
 gem 'google-api-client',       '0.7.0'
-gem 'dropbox-sdk',             '1.6.3'
+gem 'dropbox-sdk', '1.6.3'
 gem 'instagram',               '1.1.6'
-gem 'gibbon',                  '1.1.4'
+gem 'gibbon', '1.1.4'
 
 # Geocoder (synchronizer doesn't needs it anymore)
 gem 'eventmachine',            '1.0.4'
@@ -82,12 +82,12 @@ gem 'resque-metrics',        '0.1.1'
 gem 'test-unit'
 
 group :test do
-  gem 'simplecov',                       require: false
-  gem 'simplecov-json'
-  gem 'simplecov-rcov'
+  gem 'simplecov', '>= 0.12.0', require: false
+  gem 'simplecov-json', '>= 0.2'
+  gem 'simplecov-rcov', '>= 0.2.3'
   gem 'db-query-matchers',     '0.4.0'
   gem 'rack-test',             '0.6.2',  require: 'rack/test'
-  gem 'factory_girl_rails',    '~> 4.0.0'
+  gem 'factory_girl_rails', '~> 4.0.0'
   gem 'selenium-webdriver',    '>= 2.5.0'
   gem 'capybara',              '1.1.2'
   gem 'delorean'
@@ -109,7 +109,7 @@ group :test, :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails',           '2.12.0'
+  gem 'rspec-rails', '2.12.0'
   gem 'rb-readline'
   gem 'byebug'
   gem 'rack'
