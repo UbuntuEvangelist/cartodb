@@ -91,7 +91,7 @@ group :test do
   gem 'selenium-webdriver',    '>= 2.5.0'
   gem 'capybara',              '1.1.2'
   gem 'delorean'
-  gem 'webrick',               '1.3.1'
+  gem 'webrick', '1.6.1'
   gem 'mocha',                 '1.1.0'
   gem 'ci_reporter',           '1.8.4'
   gem 'poltergeist',           '>= 1.0.0'
