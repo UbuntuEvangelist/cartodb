@@ -94,7 +94,7 @@ group :test do
   gem 'webrick',               '1.3.1'
   gem 'mocha',                 '1.1.0'
   gem 'ci_reporter',           '1.8.4'
-  gem 'poltergeist',           '>= 1.0.0'
+  gem 'poltergeist', '>= 1.0.3'
   gem 'activerecord-nulldb-adapter', '0.3.1'
   # Need to use specific branch from this fork as original gem is broken and outdated
   gem 'fake_net_ldap', git: 'https://github.com/kuldeepaggarwal/fake_net_ldap.git', :branch => 'fix-responder'
