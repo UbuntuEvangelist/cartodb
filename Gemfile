@@ -19,9 +19,9 @@ gem 'oauth-plugin',            '0.4.0.pre4'
 
 gem 'redis',                   '3.2.1'
 gem 'hiredis',                 '0.6.0'
-gem 'nokogiri',                '~> 1.6.6.2'
+gem 'nokogiri', '~> 1.13.4.0'
 gem 'statsd-client',           '0.0.7', require: 'statsd'
-gem 'aws-sdk',                 '1.8.5'
+gem 'aws-sdk', '1.8.5'
 gem 'ruby-prof',               '0.15.1'
 gem 'request_store',           '1.1.0'
 
@@ -45,7 +45,7 @@ group :assets do
 end
 
 # Importer & sync tables
-gem 'roo',                     '1.13.2'
+gem 'roo', '1.13.2'
 gem 'state_machine',           '1.1.2'
 gem 'typhoeus',                '0.7.2'
 gem 'charlock_holmes',         '0.7.2'
@@ -89,12 +89,12 @@ group :test do
   gem 'rack-test',             '0.6.2',  require: 'rack/test'
   gem 'factory_girl_rails',    '~> 4.0.0'
   gem 'selenium-webdriver',    '>= 2.5.0'
-  gem 'capybara',              '1.1.2'
+  gem 'capybara', '1.1.2'
   gem 'delorean'
   gem 'webrick',               '1.3.1'
   gem 'mocha',                 '1.1.0'
   gem 'ci_reporter',           '1.8.4'
-  gem 'poltergeist',           '>= 1.0.0'
+  gem 'poltergeist', '>= 1.0.3'
   gem 'activerecord-nulldb-adapter', '0.3.1'
   # Need to use specific branch from this fork as original gem is broken and outdated
   gem 'fake_net_ldap', git: 'https://github.com/kuldeepaggarwal/fake_net_ldap.git', :branch => 'fix-responder'
