@@ -55,7 +55,7 @@ gem 'retriable',               '1.4.1'  # google-api-client needs this
 gem 'google-api-client',       '0.7.0'
 gem 'dropbox-sdk',             '1.6.3'
 gem 'instagram',               '1.1.6'
-gem 'gibbon',                  '1.1.4'
+gem 'gibbon', '3.4.4'
 
 # Geocoder (synchronizer doesn't needs it anymore)
 gem 'eventmachine',            '1.0.4'
