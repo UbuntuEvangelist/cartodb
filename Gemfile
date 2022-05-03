@@ -75,8 +75,8 @@ gem 'bartt-ssl_requirement',   '~>1.4.0', require: 'ssl_requirement'
 
 # TODO Production gems, put them in :production group
 gem 'rollbar',               '~>2.8.3'
-gem 'resque',                '1.25.2'
-gem 'resque-metrics',        '0.1.1'
+gem 'resque', '1.25.2'
+gem 'resque-metrics', '0.1.1'
 
 # This is weird. In ruby 2 test-unit is required. We don't know why for sure
 gem 'test-unit'
