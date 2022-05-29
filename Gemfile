@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '3.2.22'
+gem 'rails', '5.0.0'
 
 gem 'rake',                    '0.9.2.2'
 gem 'pg',                      '0.15.0'
@@ -13,7 +13,7 @@ gem 'activerecord-postgres-array', '0.0.9'
 
 gem 'vizzuality-sequel-rails', '0.3.7', git: 'https://github.com/Vizzuality/sequel-rails.git'
 
-gem 'rails_warden',            '0.5.8' # Auth via the Warden Rack framework
+gem 'rails_warden', '0.5.8' # Auth via the Warden Rack framework
 gem 'oauth',                   '0.4.5'
 gem 'oauth-plugin',            '0.4.0.pre4'
 
@@ -35,7 +35,7 @@ gem 'execjs',                  '~> 0.4' # Required by ejs
 gem 'net-ldap',                '0.11'
 
 group :production, :staging do
-  gem 'unicorn',               '4.8.2'
+  gem 'unicorn', '4.8.2'
   gem 'unicorn-worker-killer'
   gem 'raindrops',             '0.15.0'
 end
@@ -75,8 +75,8 @@ gem 'bartt-ssl_requirement',   '~>1.4.0', require: 'ssl_requirement'
 
 # TODO Production gems, put them in :production group
 gem 'rollbar',               '~>2.8.3'
-gem 'resque',                '1.25.2'
-gem 'resque-metrics',        '0.1.1'
+gem 'resque', '1.25.2'
+gem 'resque-metrics', '0.1.1'
 
 # This is weird. In ruby 2 test-unit is required. We don't know why for sure
 gem 'test-unit'
@@ -86,15 +86,15 @@ group :test do
   gem 'simplecov-json'
   gem 'simplecov-rcov'
   gem 'db-query-matchers',     '0.4.0'
-  gem 'rack-test',             '0.6.2',  require: 'rack/test'
-  gem 'factory_girl_rails',    '~> 4.0.0'
+  gem 'rack-test', '0.6.2', require: 'rack/test'
+  gem 'factory_girl_rails', '~> 4.0.0'
   gem 'selenium-webdriver',    '>= 2.5.0'
-  gem 'capybara',              '1.1.2'
+  gem 'capybara', '1.1.2'
   gem 'delorean'
   gem 'webrick',               '1.3.1'
   gem 'mocha',                 '1.1.0'
   gem 'ci_reporter',           '1.8.4'
-  gem 'poltergeist',           '>= 1.0.0'
+  gem 'poltergeist', '>= 1.0.3'
   gem 'activerecord-nulldb-adapter', '0.3.1'
   # Need to use specific branch from this fork as original gem is broken and outdated
   gem 'fake_net_ldap', git: 'https://github.com/kuldeepaggarwal/fake_net_ldap.git', :branch => 'fix-responder'
@@ -109,13 +109,13 @@ group :test, :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails',           '2.12.0'
+  gem 'rspec-rails', '2.12.0'
   gem 'rb-readline'
   gem 'byebug'
-  gem 'rack'
+  gem 'rack', '>= 2.0.9.1'
 
   # Server
-  gem 'thin',                           require: false
+  gem 'thin', '>= 1.7.0', require: false
 end
 
 # segment metrics
