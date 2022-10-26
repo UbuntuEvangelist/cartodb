@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '3.2.22'
+gem 'rails', '5.2.4.3'
 
 gem 'rake',                    '0.9.2.2'
 gem 'pg',                      '0.15.0'
@@ -87,7 +87,7 @@ group :test do
   gem 'simplecov-rcov'
   gem 'db-query-matchers',     '0.4.0'
   gem 'rack-test',             '0.6.2',  require: 'rack/test'
-  gem 'factory_girl_rails',    '~> 4.0.0'
+  gem 'factory_girl_rails', '~> 4.0.0'
   gem 'selenium-webdriver',    '>= 2.5.0'
   gem 'capybara',              '1.1.2'
   gem 'delorean'
