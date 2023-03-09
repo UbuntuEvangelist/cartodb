@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '3.2.22'
+gem 'rails', '5.0.0'
 
 gem 'rake',                    '0.9.2.2'
 gem 'pg',                      '0.15.0'
@@ -87,14 +87,14 @@ group :test do
   gem 'simplecov-rcov'
   gem 'db-query-matchers',     '0.4.0'
   gem 'rack-test',             '0.6.2',  require: 'rack/test'
-  gem 'factory_girl_rails',    '~> 4.0.0'
+  gem 'factory_girl_rails', '~> 4.0.0'
   gem 'selenium-webdriver',    '>= 2.5.0'
   gem 'capybara',              '1.1.2'
   gem 'delorean'
   gem 'webrick',               '1.3.1'
   gem 'mocha',                 '1.1.0'
   gem 'ci_reporter',           '1.8.4'
-  gem 'poltergeist',           '>= 1.0.0'
+  gem 'poltergeist', '>= 1.0.3'
   gem 'activerecord-nulldb-adapter', '0.3.1'
   # Need to use specific branch from this fork as original gem is broken and outdated
   gem 'fake_net_ldap', git: 'https://github.com/kuldeepaggarwal/fake_net_ldap.git', :branch => 'fix-responder'
@@ -112,10 +112,10 @@ group :development, :test do
   gem 'rspec-rails',           '2.12.0'
   gem 'rb-readline'
   gem 'byebug'
-  gem 'rack'
+  gem 'rack', '>= 2.0.9.3'
 
   # Server
-  gem 'thin',                           require: false
+  gem 'thin', '>= 1.7.0', require: false
 end
 
 # segment metrics
